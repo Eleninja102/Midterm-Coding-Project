@@ -44,14 +44,8 @@ char Mastermind::getRandomLetter()
 //2.  Modify the secret combination of colors to be random by calling the getRandomLetter()
 //for each position in the string "colors"
 void Mastermind::setRandomColors(){
-    char colors1[4];
-    for(int i = 0; i < 4; i++){
-      colors1[i] += getRandomLetter();
-    }
-    colors = "";
-
-        for(int i = 0; i < 4; i++){
-      colors += colors1[i];
+    for(int i = 0; i < colors.length(); i++){
+        colors[i] += getRandomLetter();
     }
 }
 
@@ -62,14 +56,10 @@ void Mastermind::setRandomColors(){
 int Mastermind::getPositionsCorrect(string guess)
 {
     int numberCorrect = 0;
-    /*int lengthGuess = guess.length();
-    char arrayGuess[lengthGuess];*/
     
-    for(int i = 0; i < 4; i++){
-        for(int i1 = 0; i1 < 4; i1++){
-            if(guess[i] == colors[i1]){
+    for(int i = 0; i < guess.length(); i++){
+            if(guess[i] == colors[i]){
                 numberCorrect++;
-            }
         }
     }
     
@@ -92,7 +82,15 @@ int Mastermind::getPositionsCorrect(string guess)
 
 int Mastermind::getColorsCorrect(string guess)
 {
-    return 0;
+    int numberCorrect = 0;
+    for(int i = 0; i < guess.length(); i++){
+        for(int i1 = 0; i1 < colors.length(); i1++){
+            if(guess[i] == colors[i1]){
+                numberCorrect++;
+            }
+        }
+    }
+    return numberCorrect;
 }
 
 void Mastermind:: setSolution(string str){
