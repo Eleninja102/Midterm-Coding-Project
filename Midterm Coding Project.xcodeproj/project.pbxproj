@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D9CBFC9271FAAD100AE7B9A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CBFC8271FAAD100AE7B9A /* main.cpp */; };
+		1D9CBFD2271FB6E800AE7B9A /* Mastermind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CBFCF271FB6E700AE7B9A /* Mastermind.cpp */; };
+		1D9CBFD3271FB6E800AE7B9A /* MastermindGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CBFD0271FB6E800AE7B9A /* MastermindGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		1D9CBFC5271FAAD100AE7B9A /* Midterm Coding Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Midterm Coding Project"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D9CBFC8271FAAD100AE7B9A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1D9CBFCF271FB6E700AE7B9A /* Mastermind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mastermind.cpp; sourceTree = "<group>"; };
+		1D9CBFD0271FB6E800AE7B9A /* MastermindGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MastermindGame.cpp; sourceTree = "<group>"; };
+		1D9CBFD1271FB6E800AE7B9A /* Mastermind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mastermind.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		1D9CBFC7271FAAD100AE7B9A /* Midterm Coding Project */ = {
 			isa = PBXGroup;
 			children = (
-				1D9CBFC8271FAAD100AE7B9A /* main.cpp */,
+				1D9CBFCF271FB6E700AE7B9A /* Mastermind.cpp */,
+				1D9CBFD1271FB6E800AE7B9A /* Mastermind.h */,
+				1D9CBFD0271FB6E800AE7B9A /* MastermindGame.cpp */,
 			);
 			path = "Midterm Coding Project";
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D9CBFC9271FAAD100AE7B9A /* main.cpp in Sources */,
+				1D9CBFD3271FB6E800AE7B9A /* MastermindGame.cpp in Sources */,
+				1D9CBFD2271FB6E800AE7B9A /* Mastermind.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
