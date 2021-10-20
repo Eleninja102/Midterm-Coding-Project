@@ -24,7 +24,6 @@ char Mastermind::getRandomLetter()
     switch (x) {
         case 0:
             return 'R';
-            break;
         case 1:
             return 'O';
         case 2:
@@ -85,12 +84,15 @@ int Mastermind::getColorsCorrect(string guess)
     int numberCorrect = 0;
     for(int i = 0; i < guess.length(); i++){
         for(int i1 = 0; i1 < colors.length(); i1++){
-            if(guess[i] == colors[i1]){
+            if(guess[i] == colors[i]){
+                break;
+            }else if(guess[i] == colors[i1]){
                 numberCorrect++;
             }
         }
     }
     return numberCorrect;
+    
 }
 
 void Mastermind:: setSolution(string str){
